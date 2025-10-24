@@ -1,0 +1,97 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.back-icon {
+  font-size: 1.8rem;
+  color: #007acc;
+  margin: 20px 30px;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-icon:hover {
+  color: #005f99;
+  transform: translateX(5px);
+}
+
+.BookForm {
+  background-color: #f0faff;
+  border-radius: 16px;
+  box-shadow: 0 2px 15px rgba(0, 122, 204, 0.1);
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: right;
+}
+
+.BookForm h1 {
+  color: #005f99;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.BookForm p {
+  color: #444;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 14px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #3399ff;
+  transform: scale(1.03);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .BookForm {
+    padding: 30px 15px;
+  }
+
+  .BookForm h1 {
+    font-size: 1.5rem;
+  }
+
+  input, select, button {
+    font-size: 1rem;
+  }
+}

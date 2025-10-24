@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صفحة الحجز</title>
+  <link rel="stylesheet" href="../Css/BookFormStyle.css" />
+  <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.min.css">
+
+</head>
+<body>
+    <a href="../HtmlPages/Home.html" class="back-icon" title="الرجوع للصفحة الرئيسية">
+  <i class="fas fa-arrow-right"></i>
+</a>
+
+  <section class="BookForm">
+    <h1>احجز موعدك الآن</h1>
+    <p>يرجى تعبئة البيانات التالية وسنتواصل معك لتأكيد الموعد </p>
+    <form>
+      <label for="fullName">الاسم الكامل:</label>   
+      <input type="text" id="fullName" placeholder="ادخل الاسم الكامل" required />    
+
+      <label for="phoneNumber">رقم الهاتف:</label>
+      <input type="tel" id="phoneNumber" placeholder="ادخل رقم الهاتف" required /> 
+
+      <label for="service">اختر الخدمة:</label>
+      <select id="service" required>
+        <option value="" disabled selected>اختر خدمة</option>
+        <option>تنظيف أسنان</option>
+        <option>تبييض أسنان</option>
+        <option>حشوة</option>
+        <option>فحص دوري</option>
+        <option>تقويم أسنان</option>
+        <option>زراعة الأسنان</option>
+        <option>علاج العصب</option>
+        <option>علاج التهاب اللثة</option>
+        <option>فينير الأسنان</option>
+        <option>غير ذلك</option>
+      </select>
+
+      <button type="submit">احجز الموعد</button>
+    </form>
+  </section>
+
+</body>
+</html>
